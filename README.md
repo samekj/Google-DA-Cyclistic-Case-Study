@@ -11,7 +11,7 @@ Course: [Google Data Analytics Capstone: Complete a Case Study](https://www.cour
 
 Data source: [divvy-tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) (accessed on 08/20/23)
 
-## Context
+## Project Overview
 
 ### Scenario
 
@@ -29,7 +29,7 @@ Lily Moreno, the director of marketing and my manager, has set a clear goal: Des
 
 ## Ask
 
-### Business task
+### Business Task
 
 The primary business task is to:
 
@@ -49,7 +49,7 @@ Moreno has assigned me the first question to answer: **How do annual members and
 
 ## Prepare
 
-### Data source
+### Data Source
 
 I used Cyclistic's historical trip data to analyze and identify trends from July 2022 to June 2023 of Cyclistic trip data from [divvy-tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
@@ -57,7 +57,7 @@ The data has been made available by Motivate International Inc. under this [lice
 
 This is public data that you can use to explore how different customer types are using Cyclistic bikes. But note that data-privacy issues prohibit you from using riders' personally identifiable information. This means that you won't be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
-### Data organization
+### Data Organization
 
 The data is organized into 12 files, each representing a month from July 2022 to June 2023. The columns in these datasets include `ride_id`, `rideable_type`, `started_at`, `ended_at`, `start_station_name`, `start_station_id`, `end_station_name`, `end_station_id`, `start_lat`, `start_lng`, `end_lat`, `end_lng`, and `member_casual`.
 
@@ -67,13 +67,13 @@ RStudio is used to combine the twelve datasets into one.
 
 5,779,444 × 13
 
-### Combining the data
+### Data Combining
 
 R code: [Data Combining](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/01.%20Combining.R)
 
 All twelve datasets are combined into a single dataset named "all_trips". The resultant structure of "all_trips" is 5,779,444 rows and 13 columns.
 
-### Data exploration
+### Data Exploration
 
 As a next step, I am doing an exploratory data analysis to get to know the structure of the data and to look for dirty data.
 R code: [Data Exploration](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/02.%20Exploration.R)
@@ -107,10 +107,51 @@ There are 2 unique values in `member_casual`.
 All `ride_id` values have length of 16.
 
 
-### Data cleaning and transformation
+### Data Cleaning and Transformation
 
 R code: [Data Cleaning and Transformation](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/03.%20Cleaning%20and%20transforming.R)
 
+In this section, we detail the steps taken to clean and transform the raw data from the `all_trips` dataset. The objective is to prepare the data for analysis, ensuring its quality and relevance.
+
+### Step 1: Creating a Backup Dataset
+
+To preserve the integrity of the original data, we create a backup dataset named `all_trips_v2`. This allows us to work with a copy while retaining the original data.
+
+### Step 2: Calculating Ride Duration
+
+We calculate the ride duration in seconds and add it as a new column, ride_duration_sec.
+
+### Step 3: Converting to Minutes
+
+To facilitate analysis, we convert the ride duration from seconds to minutes and store it in the ride_duration_min column.
+
+### Step 4: Formatting Duration
+
+We format the ride duration into HH:MM:SS format, both as character and numeric types.
+
+### Step 5: Handling Outliers
+
+We identify and handle potential outliers:
+
+- Counting the rows with a ride duration of more than a day.
+- Counting the number of negative values in the ride_duration_sec column.
+
+### Step 6: Creating Filtered Dataset
+
+We create a new dataset, all_trips_v3, by filtering out non-negative values in the ride_duration_sec column.
+
+### Step 7: Removing Unnecessary Columns
+
+To focus on relevant data, we remove columns not needed for our analysis, including station-related columns and location data.
+
+### Step 8: Extracting Time Components
+
+We extract additional time-related information, including the started hour, day of the week, and month, to aid in our analysis.
+
+The resulting dataset, all_trips_v3, is now prepared for analysis with the necessary transformations and cleaning steps applied.
+
+
+  
 ## Analyze
 
 R code: [Data Analysis](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/04.%20Analysis.R)
