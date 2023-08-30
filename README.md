@@ -71,7 +71,28 @@ All twelve datasets are combined into a single dataset named "all_trips". The re
 
 ### Data exploration
 
+As a next step, I am doing an exploratory data analysis to get to know the structure of the data and to look for dirty data.
 R code: [Data Exploration](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/02.%20Exploration.R)
+
+- Data structure:
+
+![image](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/structure.png)
+
+- NA values per column:
+
+![image](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/isNA.png)
+
+- Duplicated data:
+
+![image](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/duplicated.png)
+
+- Distinct values in 'member_casual' column:
+
+![image](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/distinct_usertype.png)
+
+
+
+
 
 ### Data cleaning
 
