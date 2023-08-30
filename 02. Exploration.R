@@ -15,3 +15,6 @@ table(all_trips$rideable_type)
 
 # Count the distinct values in the "member_casual" column
 table(all_trips$member_casual)
+
+# Count the distinct character lengths in "ride_id"
+table(nchar(all_trips$ride_id))
