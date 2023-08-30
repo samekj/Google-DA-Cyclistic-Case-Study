@@ -31,11 +31,15 @@ Lily Moreno, the director of marketing and my manager, has set a clear goal: Des
 
 ### Business task
 
-Analyze Cyclistic's historical bike trip data to understand the differences in usage patterns between annual members and casual riders. Additionally, the task involves identifying the motivations and factors that lead casual riders to purchase Cyclistic annual memberships. Furthermore, the goal is to develop effective digital media strategies that can influence casual riders to transition into becoming annual members. Ultimately, the objective is to increase the number of annual members and drive future growth for Cyclistic.
+The primary business task is to:
+
+- Analyze Cyclistic's historical bike trip data to understand the differences in usage patterns between annual members and casual riders.
+- Identify the motivations and factors that lead casual riders to purchase Cyclistic annual memberships.
+- Develop effective digital media strategies that can influence casual riders to transition into becoming annual members.
 
 ### Analysis Questions
 
-Three questions will guide the future marketing program:
+To achieve the business task, we will answer the following questions:
 
 1.  How do annual members and casual riders use Cyclistic bikes differently?
 2.  Why would casual riders buy Cyclistic annual memberships?
@@ -55,7 +59,7 @@ This is public data that you can use to explore how different customer types are
 
 ### Data organization
 
-There are 12 files with naming convention of YYYYMM-divvy-tripdata. Each of these files include information for each month from July 2022 to June 2023. The corresponding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.
+The data is organized into 12 files, each representing a month from July 2022 to June 2023. The columns in these datasets include `ride_id`, `rideable_type`, `started_at`, `ended_at`, `start_station_name`, `start_station_id`, `end_station_name`, `end_station_id`, `start_lat`, `start_lng`, `end_lat`, `end_lng`, and `member_casual`.
 
 ## Process
 
@@ -76,25 +80,34 @@ R code: [Data Exploration](https://github.com/samekj/Google-DA-Cyclistic-Case-St
 
 - Data structure:
 
-![image](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/structure.png)
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/structure.png" alt="Alt Text" width="300">
 
 - NA values per column:
 
-![image](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/isNA.png)
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/isNA.png" alt="Alt Text" width="700">
+
+The station name and ID columns have the highest proportion of missing values, accounting for approximately 15% of the dataset. Note that this columns are
 
 - Duplicated data:
 
-![image](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/duplicated.png)
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/duplicated.png" alt="Alt Text" width="200">
+
+There is no duplicated data.
 
 - Distinct values in 'member_casual' column:
 
-![image](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/distinct_usertype.png)
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/distinct_usertype.png" alt="Alt Text" width="400">
+
+There are 2 unique values in `member_casual`.
+
+- Distinct character lengths in 'ride_id' column:
+
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/distinct_charlength.png" alt="Alt Text" width="400">
+
+All `ride_id` values have length of 16.
 
 
-
-
-
-### Data cleaning
+### Data cleaning and transformation
 
 R code: [Data Cleaning and Transformation](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/03.%20Cleaning%20and%20transforming.R)
 
