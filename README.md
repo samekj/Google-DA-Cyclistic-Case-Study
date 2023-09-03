@@ -155,7 +155,8 @@ The resulting dataset, all_trips_v3, is now prepared for analysis with the neces
 ## Analyze and Share
 
 R code: [Data Analysis](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/04.%20Analysis.R)
-Data Visualization: [Tableau](https://public.tableau.com/app/profile/samekj.jurado/viz/Bike-ShareTripData/HourvsAvgDur)
+
+Data Visualization: [Tableau](https://public.tableau.com/app/profile/samekj.jurado/viz/Bike-ShareTripData/BikeType#1)
 
 In this section, I conduct a descriptive analysis of the cleaned and transformed dataset, `all_trips_v3`. This analysis provides valuable insights into the usage patterns of Cyclistic's bike-sharing service by different user types and various time-related factors.
 
