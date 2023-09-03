@@ -25,7 +25,7 @@ Until now, Cyclistic's marketing strategy relied on building general awareness a
 
 Cyclistic's finance analysts have concluded that annual members are much more profitable than casual riders. Although the pricing flexibility helps Cyclistic attract more customers, Moreno believes that maximizing the number of annual members will be key to future growth. Rather than creating a marketing campaign that targets all-new customers, Moreno believes there is a very good chance to convert casual riders into members. She notes that casual riders are already aware of the Cyclistic program and have chosen Cyclistic for their mobility needs.
 
-Lily Moreno, the director of marketing and my manager, has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
+Lily Moreno, the director of marketing and my manager, has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, hoIver, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
 
 ## Ask
 
@@ -33,19 +33,19 @@ Lily Moreno, the director of marketing and my manager, has set a clear goal: Des
 
 The primary business task is to:
 
-- Analyze Cyclistic's historical bike trip data to understand the differences in usage patterns between annual members and casual riders.
+- Analyze Cyclistic's historical bike trip data to understand the differences in usage patterns betIen annual members and casual riders.
 - Identify the motivations and factors that lead casual riders to purchase Cyclistic annual memberships.
 - Develop effective digital media strategies that can influence casual riders to transition into becoming annual members.
 
 ### Analysis Questions
 
-To achieve the business task, we will answer the following questions:
+To achieve the business task, I will ansIr the following questions:
 
 1.  How do annual members and casual riders use Cyclistic bikes differently?
 2.  Why would casual riders buy Cyclistic annual memberships?
 3.  How can Cyclistic use digital media to influence casual riders to become members?
 
-Moreno has assigned me the first question to answer: **How do annual members and casual riders use Cyclistic bikes differently?**
+Moreno has assigned me the first question to ansIr: **How do annual members and casual riders use Cyclistic bikes differently?**
 
 ## Prepare
 
@@ -63,7 +63,7 @@ The data is organized into 12 files, each representing a month from July 2022 to
 
 ## Process
 
-RStudio is used to combine the twelve datasets into one.
+RStudio is used to combine the tIlve datasets into one.
 
 5,779,444 × 13
 
@@ -71,7 +71,7 @@ RStudio is used to combine the twelve datasets into one.
 
 R code: [Data Combining](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/01.%20Combining.R)
 
-All twelve datasets are combined into a single dataset named "all_trips". The resultant structure of "all_trips" is 5,779,444 rows and 13 columns.
+All tIlve datasets are combined into a single dataset named "all_trips". The resultant structure of "all_trips" is 5,779,444 rows and 13 columns.
 
 ### Data Exploration
 
@@ -111,47 +111,92 @@ All `ride_id` values have length of 16.
 
 R code: [Data Cleaning and Transformation](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/03.%20Cleaning%20and%20transforming.R)
 
-In this section, we detail the steps taken to clean and transform the raw data from the `all_trips` dataset. The objective is to prepare the data for analysis, ensuring its quality and relevance.
+In this section, I detail the steps taken to clean and transform the raw data from the `all_trips` dataset. The objective is to prepare the data for analysis, ensuring its quality and relevance.
 
 ### Step 1: Creating a Backup Dataset
 
-To preserve the integrity of the original data, we create a backup dataset named `all_trips_v2`. This allows us to work with a copy while retaining the original data.
+To preserve the integrity of the original data, I create a backup dataset named `all_trips_v2`. This allows us to work with a copy while retaining the original data.
 
 ### Step 2: Calculating Ride Duration
 
-We calculate the ride duration in seconds and add it as a new column, ride_duration_sec.
+I calculate the ride duration in seconds and add it as a new column, ride_duration_sec.
 
 ### Step 3: Converting to Minutes
 
-To facilitate analysis, we convert the ride duration from seconds to minutes and store it in the ride_duration_min column.
+To facilitate analysis, I convert the ride duration from seconds to minutes and store it in the ride_duration_min column.
 
 ### Step 4: Formatting Duration
 
-We format the ride duration into HH:MM:SS format, both as character and numeric types.
+I format the ride duration into HH:MM:SS format, both as character and numeric types.
 
 ### Step 5: Handling Outliers
 
-We identify and handle potential outliers:
+I identify and handle potential outliers:
 
 - Counting the rows with a ride duration of more than a day.
 - Counting the number of negative values in the ride_duration_sec column.
 
 ### Step 6: Creating Filtered Dataset
 
-We create a new dataset, all_trips_v3, by filtering out non-negative values in the ride_duration_sec column.
+I create a new dataset, all_trips_v3, by filtering out non-negative values in the ride_duration_sec column.
 
 ### Step 7: Removing Unnecessary Columns
 
-To focus on relevant data, we remove columns not needed for our analysis, including station-related columns and location data.
+To focus on relevant data, I remove columns not needed for our analysis, including station-related columns and location data.
 
 ### Step 8: Extracting Time Components
 
-We extract additional time-related information, including the started hour, day of the week, and month, to aid in our analysis.
+I extract additional time-related information, including the started hour, day of the Week, and month, to aid in our analysis.
 
 The resulting dataset, all_trips_v3, is now prepared for analysis with the necessary transformations and cleaning steps applied.
 
 
   
-## Analyze
+## Analyze and Share
 
 R code: [Data Analysis](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/04.%20Analysis.R)
+Data Visualization: [Tableau](https://public.tableau.com/app/profile/samekj.jurado/viz/Bike-ShareTripData/HourvsAvgDur)
+
+In this section, I conduct a descriptive analysis of the cleaned and transformed dataset, `all_trips_v3`. This analysis provides valuable insights into the usage patterns of Cyclistic's bike-sharing service by different user types and various time-related factors.
+
+### Analyzing Ridership Data by User Type and Day of the Week
+
+I analyze ridership data by user type (member or casual) and day of the Week. The `day_of_ride` dataset contains the following information:
+
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/trips_dow.png" alt="Alt Text" width="400">
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/duration_dow.png" alt="Alt Text" width="400">
+
+- `member_casual`: User type (member or casual).
+- `day_of_week`: Day of the Week.
+- `number_of_rides`: Number of rides.
+- `avg_duration_minutes`: Average ride duration in minutes.
+
+### Analyzing Ridership Data by User Type and Started Hour
+
+I further explore ridership data by user type and the hour at which rides started. The `hour_of_ride` dataset contains the following information:
+
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/trips_hour.png" alt="Alt Text" width="400">
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/duration_hour.png" alt="Alt Text" width="400">
+
+- `member_casual`: User type (member or casual).
+- `started_hour`: Hour of ride start.
+- `number_of_rides`: Number of rides.
+- `avg_duration_minutes`: Average ride duration in minutes.
+
+### Analyzing Ridership Data by User Type and Month of Ride
+
+I analyze ridership data by user type and the month in which rides occurred. The `month_of_ride` dataset contains the following information:
+
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/trips_month.png" alt="Alt Text" width="400">
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/duration_month.png" alt="Alt Text" width="400">
+
+- `member_casual`: User type (member or casual).
+- `month`: Month of the ride.
+- `number_of_rides`: Number of rides.
+- `avg_duration_minutes`: Average ride duration in minutes.
+
+The descriptive analysis provides insights that will guide our marketing strategies to convert casual riders into annual members.
+
+
+
+
