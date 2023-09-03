@@ -160,44 +160,19 @@ Data Visualization: [Tableau](https://public.tableau.com/app/profile/samekj.jura
 
 In this section, I conduct a descriptive analysis of the cleaned and transformed dataset, `all_trips_v3`. This analysis provides valuable insights into the usage patterns of Cyclistic's bike-sharing service by different user types and various time-related factors.
 
-### Analyzing Ridership Data by User Type and Day of the Week
+In the first place, member and casual riders are compared by the type of bikes they are using.
 
-I analyze ridership data by user type (member or casual) and day of the Week. The `day_of_ride` dataset contains the following information:
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/bike_type.png" alt="Alt Text" width="900">
 
-<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/trips_dow.png" alt="Alt Text" width="400">
-<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/duration_dow.png" alt="Alt Text" width="400">
+The members make 59% of the total while remaining 41% constitutes casual riders. Each bike type chart shows percentage from the total. Most used bike is classic bike followed by the electric bike. Docked bikes are used the least by only casual riders.
 
-- `member_casual`: User type (member or casual).
-- `day_of_week`: Day of the Week.
-- `number_of_rides`: Number of rides.
-- `avg_duration_minutes`: Average ride duration in minutes.
+Next, the number of total trips shown by the months of 2022, the days of the week, and the started hours of the rides.
 
-### Analyzing Ridership Data by User Type and Started Hour
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/total_trips.png" alt="Alt Text" width="900">
 
-I further explore ridership data by user type and the hour at which rides started. The `hour_of_ride` dataset contains the following information:
+From the graphs above, we 
 
-<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/trips_hour.png" alt="Alt Text" width="400">
-<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/duration_hour.png" alt="Alt Text" width="400">
-
-- `member_casual`: User type (member or casual).
-- `started_hour`: Hour of ride start.
-- `number_of_rides`: Number of rides.
-- `avg_duration_minutes`: Average ride duration in minutes.
-
-### Analyzing Ridership Data by User Type and Month of Ride
-
-I analyze ridership data by user type and the month in which rides occurred. The `month_of_ride` dataset contains the following information:
-
-<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/trips_month.png" alt="Alt Text" width="400">
-<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/duration_month.png" alt="Alt Text" width="400">
-
-- `member_casual`: User type (member or casual).
-- `month`: Month of the ride.
-- `number_of_rides`: Number of rides.
-- `avg_duration_minutes`: Average ride duration in minutes.
-
-The descriptive analysis provides insights that will guide our marketing strategies to convert casual riders into annual members.
-
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/average_duration.png" alt="Alt Text" width="900">
 
 
 
