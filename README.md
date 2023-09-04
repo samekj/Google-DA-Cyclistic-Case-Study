@@ -196,8 +196,8 @@ When examining the average ride durations:
 
 ### Temporal Patterns
 
-- Casual users tend to have longer rides, averaging around 29 minutes per ride.
-- In contrast, member users have significantly shorter rides, averaging just 13 minutes per ride.
+- Casual users tend to have longer rides, averaging around 22 minutes per ride.
+- In contrast, member users have significantly shorter rides, averaging just 12 minutes per ride.
 
 **Monthly Trends**:
 - Across both user types, the trend in ride duration remains relatively constant, with the shortest ride durations occurring during the winter months.
@@ -207,11 +207,25 @@ When examining the average ride durations:
 - Member users maintain a consistent average ride duration throughout the entire week, with slightly longer rides on Saturdays and Sundays.
 
 **Hours of the Day**:
-- Casual riders show a distinctive pattern with ride durations exceeding 40 minutes per ride at around 2 AM. Conversely, their shortest ride durations, averaging less than 20 minutes per ride, occur at around 7 AM, leading to a relatively flat trend for the rest of the day.
+- Casual riders tend to enjoy longer rides during late morning to early afternoon, from 10am to 2pm, possibly for leisurely daytime cycling. In contrast, they opt for shorter trips in the early morning, between 5 am and 8 am.
 - Member users exhibit a steady trend in ride duration throughout the entire day, with no significant fluctuations.
 
-The analysis reveals that casual riders tend to have longer rides, particularly on weekends, reflecting their preference for leisurely cycling. In contrast, member users consistently maintain shorter ride durations, which could be attributed to weekday commuting habits. Overall, ride durations remain relatively stable across both user types, with the shortest durations observed during the winter months. Additionally, the hourly analysis shows that casual riders experience notable variations throughout the day, while member users exhibit a more consistent trend with no significant fluctuations.
+The analysis reveals that casual riders tend to have longer rides, particularly on weekends, reflecting their preference for leisurely cycling. In contrast, member users consistently maintain shorter ride durations, which could be attributed to weekday commuting habits. Overall, ride durations remain relatively stable across both user types, with the shortest durations observed during the winter months. Additionally, the hourly analysis shows that casual riders experience notable variations throughout the day, incrementing their ride durations between 10am and 2pm, while member users exhibit a more consistent trend with no significant fluctuations.
 
+## Summary
+
+Based on the observed patterns, it can be concluded that casual riders tend to embark on longer journeys, approximately twice the duration of member rides, albeit less frequently. Notably, casual riders prefer extended rides during weekends and daytime hours, particularly in the spring and summer seasons, suggesting a recreational purpose behind these longer rides.
+
+| Aspect                | Casual Riders                                            | Member Riders                                           |
+|-----------------------|---------------------------------------------------------|---------------------------------------------------------|
+| **Time Preferences**  | Prefer using bikes throughout the day, more frequently over the weekends in summer and spring for leisure activities. | Prefer riding bikes on weekdays during commute hours (8 am & 5 pm) in summer and spring. |
+| **Ride Duration**     | Travel almost 2 times longer but less frequently than members.  | Travel more frequently but take shorter rides (approximately half of casual riders' trip duration). |
+
+## Act
+
+1. Seasonal Targeting: Focus marketing efforts on casual riders during spring and summer.
+2. Tailored Memberships: Introduce seasonal or weekend-only membership options to align with casual riders' weekend and seasonal riding patterns.
+3. Duration Discounts: Encourage longer rides for both casual riders and members by offering discounts for extended ride durations.
 
 
 
