@@ -138,7 +138,7 @@ I identify and handle potential outliers:
 
 ### Step 6: Creating Filtered Dataset
 
-I create a new dataset, all_trips_v3, by filtering out non-negative values in the ride_duration_sec column.
+I create a new dataset, `all_trips_v3`, by filtering out non-negative values in the `ride_duration_sec` column and rides with a duration of more than a day (86400 seconds).
 
 ### Step 7: Removing Unnecessary Columns
 
