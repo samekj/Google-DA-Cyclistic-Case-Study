@@ -69,14 +69,14 @@ RStudio is used to combine the tIlve datasets into one.
 
 ### Data Combining
 
-R code: [Data Combining](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/01.%20Combining.R)
+R Code: [Data Combining](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/01.%20Combining.R)
 
 All tIlve datasets are combined into a single dataset named "all_trips". The resultant structure of "all_trips" is 5,779,444 rows and 13 columns.
 
 ### Data Exploration
 
 As a next step, I am doing an exploratory data analysis to get to know the structure of the data and to look for dirty data.
-R code: [Data Exploration](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/02.%20Exploration.R)
+R Code: [Data Exploration](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/02.%20Exploration.R)
 
 - Data structure:
 
@@ -109,7 +109,7 @@ All `ride_id` values have length of 16.
 
 ### Data Cleaning and Transformation
 
-R code: [Data Cleaning and Transformation](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/03.%20Cleaning%20and%20transforming.R)
+**Data Cleaning and Transformation**: [R Code](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/03.%20Cleaning%20and%20transforming.R)
 
 In this section, I detail the steps taken to clean and transform the raw data from the `all_trips` dataset. The objective is to prepare the data for analysis, ensuring its quality and relevance.
 
@@ -148,31 +148,70 @@ To focus on relevant data, I remove columns not needed for our analysis, includi
 
 I extract additional time-related information, including the started hour, day of the Week, and month, to aid in our analysis.
 
-The resulting dataset, all_trips_v3, is now prepared for analysis with the necessary transformations and cleaning steps applied.
-
+The resulting dataset, all_trips_v3, has a structure of 5,662,257 rows and 11 columns. It is now prepared for analysis with the necessary transformations and cleaning steps applied.
 
   
 ## Analyze and Share
 
-R code: [Data Analysis](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/04.%20Analysis.R)
+**Data Analysis**: [R Code](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/04.%20Analysis.R)
 
-Data Visualization: [Tableau](https://public.tableau.com/app/profile/samekj.jurado/viz/Bike-ShareTripData/BikeType#1)
+**Data Visualization**: [Tableau](https://public.tableau.com/app/profile/samekj.jurado/viz/Bike-ShareTripData/BikeType#1)
 
 In this section, I conduct a descriptive analysis of the cleaned and transformed dataset, `all_trips_v3`. This analysis provides valuable insights into the usage patterns of Cyclistic's bike-sharing service by different user types and various time-related factors.
 
-In the first place, member and casual riders are compared by the type of bikes they are using.
+### Bike Type Preferences
+
+The analysis begins by examining the distribution of bike usage by member and casual riders across different bike types. Here's what I discovered:
 
 <img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/bike_type.png" alt="Alt Text" width="900">
 
 The members make 59% of the total while remaining 41% constitutes casual riders. Each bike type chart shows percentage from the total. Most used bike is classic bike followed by the electric bike. Docked bikes are used the least by only casual riders.
 
-Next, the number of total trips shown by the months of 2022, the days of the week, and the started hours of the rides.
+- Members constitute 59% of all riders, with casual riders making up the remaining 41%.
+- When examining bike usage, classic bikes stand out as the most frequently used, representing 46% of total usage. Electric bikes closely follow, accounting for 41% of total usage. Docked bikes, however, are the least popular, primarily among casual riders.
+
+### Temporal Patterns
+
+To gain a comprehensive understanding of user behavior, I explored temporal patterns, considering three dimensions: months of the year, days of the week, and hours of the day.
 
 <img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/total_trips.png" alt="Alt Text" width="900">
 
-From the graphs above, we 
+**Monthly Trends**:
+- Both member and casual riders exhibit similar patterns. Peak ridership occurs during the summer months, followed by a gradual decline in the autumn and a notable decrease during the winter months.
+- This suggests that the weather likely plays a significant role in bike usage, with more people opting for rides during pleasant, warm months.
+
+**Days of the Week**:
+- Member users tend to use bikes more during weekdays, with a decline towards the weekend. This pattern may be indicative of members using bikes for commuting to work or other weekday activities.
+- Casual riders, conversely, show peak usage on Saturdays and Sundays. This observation implies that casual riders are more likely to use bikes for leisure and weekend outings.
+
+**Hours of the Day**:
+- Both user types present the same pattern, with the particularity that member riders have a peak of usage at around 8pm and at 5pm. Casual riders haver their most usage at 5pm.
+-These patterns suggest commuting to and from work trends for member users, while casual riders tend to use bikes more in the late afternoon, possibly for recreational activities.
+
+From the observations, it's evident that members likely use bikes for weekday commuting, while casual riders opt for leisurely rides throughout the day, especially on weekends. Both user types are most active during the warmer months of summer and spring.
+
+When examining the average ride durations:
 
 <img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/average_duration.png" alt="Alt Text" width="900">
+
+### Temporal Patterns
+
+- Casual users tend to have longer rides, averaging around 29 minutes per ride.
+- In contrast, member users have significantly shorter rides, averaging just 13 minutes per ride.
+
+**Monthly Trends**:
+- Across both user types, the trend in ride duration remains relatively constant, with the shortest ride durations occurring during the winter months.
+  
+**Days of the Week**:
+- Casual riders tend to have longer trips on Saturdays and Sundays, indicating that weekends see more extended leisure rides for this group.
+- Member users maintain a consistent average ride duration throughout the entire week, with slightly longer rides on Saturdays and Sundays.
+
+**Hours of the Day**:
+- Casual riders show a distinctive pattern with ride durations exceeding 40 minutes per ride at around 2 AM. Conversely, their shortest ride durations, averaging less than 20 minutes per ride, occur at around 7 AM, leading to a relatively flat trend for the rest of the day.
+- Member users exhibit a steady trend in ride duration throughout the entire day, with no significant fluctuations.
+
+The analysis reveals that casual riders tend to have longer rides, particularly on weekends, reflecting their preference for leisurely cycling. In contrast, member users consistently maintain shorter ride durations, which could be attributed to weekday commuting habits. Overall, ride durations remain relatively stable across both user types, with the shortest durations observed during the winter months. Additionally, the hourly analysis shows that casual riders experience notable variations throughout the day, while member users exhibit a more consistent trend with no significant fluctuations.
+
 
 
 
