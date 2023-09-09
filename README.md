@@ -71,7 +71,7 @@ RStudio is used to combine the tIlve datasets into one.
 
 R Code: [Data Combining](https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/01.%20Combining.R)
 
-All tIlve datasets are combined into a single dataset named "all_trips". The resultant structure of "all_trips" is 5,779,444 rows and 13 columns.
+All twelve datasets are combined into a single dataset named "all_trips". The resultant structure of "all_trips" is 5,779,444 rows and 13 columns.
 
 ### Data Exploration
 
