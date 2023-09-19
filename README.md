@@ -214,24 +214,32 @@ The analysis reveals that casual riders tend to have longer rides, particularly 
 
 ### Starting and Ending Stations
 
+The visual representation below illustrates the contrast between _starting_ stations for **member users** (left pane) and **casual users** (right pane).
+
 <img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/start_station.png" alt="Alt Text" width="900">
 
+Upon closer examination, stations with 12,000 or more trips in 2022 reveal interesting insights. Member users utilize a wide array of starting stations, totaling over 40, which are more evenly distributed across the city. This dispersion aligns with the fact that members constitute the majority of riders throughout the year and suggests that members prefer stations near their residences, workplaces and schools, as noted in the previous analysis of trip distribution.
+
+Conversely, casual riders primarily initiate their trips from a smaller set of stations, with only 12 stations meeting the 12,000 trip threshold. These stations are strategically located near points of interest popular among tourists.
+
+The visualization below illustrates the contrast between _ending_ stations for **member users** (left pane) and **casual users** (right pane)
+
 <img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/end_station.png" alt="Alt Text" width="900">
+
+Upon a close examination of the map above, a striking similarity emerges with the starting stations. This observation underscores that the stations most frequently utilized by both member and casual users remain consistent, whether as starting or ending points for their rides.
 
 ## Summary
 
 Based on the observed patterns, it can be concluded that casual riders tend to embark on longer journeys, approximately twice the duration of member rides, albeit less frequently. Notably, casual riders prefer extended rides during weekends and daytime hours, particularly in the spring and summer seasons, suggesting a recreational purpose behind these longer rides.
 
-| Aspect                | Casual Riders                                            | Member Riders                                           |
-|-----------------------|---------------------------------------------------------|---------------------------------------------------------|
-| **Time Preferences**  | Prefer using bikes throughout the day, more frequently over the weekends in summer and spring for leisure activities. | Prefer riding bikes on weekdays during commute hours (8 am & 5 pm) in summer and spring. |
-| **Ride Duration**     | Travel almost 2 times longer but less frequently than members.  | Travel more frequently but take shorter rides (approximately half of casual riders' trip duration). |
+| Aspect | Member Riders | Casual Riders |
+|--------|---------------|---------------|
+| **Time Preferences** | Prefer riding bikes on weekdays during commute hours (8 am & 5 pm) in summer and spring. | Prefer using bikes throughout the day, more frequently over the weekends in summer and spring for leisure activities. |
+| **Ride Duration** | Travel more frequently but take shorter rides (approximately half the duration of casual riders' trips). | Travel almost 2 times longer but less frequently than members. |
+| **Station Preferences** | Prefer starting and ending their trips near universities, residential areas, commercial districts, and other urban amenities. | Prefer starting and ending their trips near parks, museums, and recreational sites.|
 
 ## Act
 
-1. Seasonal Targeting: Focus marketing efforts on casual riders during spring and summer.
-2. Tailored Memberships: Introduce seasonal or weekend-only membership options to align with casual riders' weekend and seasonal riding patterns.
-3. Duration Discounts: Encourage longer rides for both casual riders and members by offering discounts for extended ride durations.
-
-
-
+1. Seasonal Targeting: Concentrate marketing efforts on casual riders during spring and summer, especially near stations close to tourist and recreational sites popular among casual riders.
+2. Tailored Memberships: Consider introducing seasonal or weekend-only membership options to align with casual riders' weekend and seasonal riding patterns. Promote these memberships near stations that see higher casual rider activity.
+3. Duration Discounts: Encourage longer rides for both casual riders and members by offering discounts for extended ride durations. Promote this at stations that cater to both user types.
