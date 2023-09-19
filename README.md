@@ -214,9 +214,9 @@ The analysis reveals that casual riders tend to have longer rides, particularly 
 
 ### Starting and Ending Stations
 
-<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/start.png" alt="Alt Text" width="900">
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/start_station.png" alt="Alt Text" width="900">
 
-<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/end.png" alt="Alt Text" width="900">
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/end_station.png" alt="Alt Text" width="900">
 
 ## Summary
 
