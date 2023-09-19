@@ -212,6 +212,12 @@ When examining the average ride durations:
 
 The analysis reveals that casual riders tend to have longer rides, particularly on weekends, reflecting their preference for leisurely cycling. In contrast, member users consistently maintain shorter ride durations, which could be attributed to weekday commuting habits. Overall, ride durations remain relatively stable across both user types, with the shortest durations observed during the winter months. Additionally, the hourly analysis shows that casual riders experience notable variations throughout the day, incrementing their ride durations between 10am and 2pm, while member users exhibit a more consistent trend with no significant fluctuations.
 
+### Starting and Ending Stations
+
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/start.png" alt="Alt Text" width="900">
+
+<img src="https://github.com/samekj/Google-DA-Cyclistic-Case-Study/blob/main/images/end.png" alt="Alt Text" width="900">
+
 ## Summary
 
 Based on the observed patterns, it can be concluded that casual riders tend to embark on longer journeys, approximately twice the duration of member rides, albeit less frequently. Notably, casual riders prefer extended rides during weekends and daytime hours, particularly in the spring and summer seasons, suggesting a recreational purpose behind these longer rides.
